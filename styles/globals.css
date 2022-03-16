@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,14 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@layer components {
+  .sidebarIcon {
+    @apply h-6 text-[#808080] cursor-pointer
+  }
+
+  .tag {
+    @apply py-1.5 px-3 text-[#cecece] rounded-xl text-xs font-bold border-2 border-[#484848]
+  }
 }
